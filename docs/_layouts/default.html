@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+<style>
+   .main-cover {
+    background: #eeeeee;
+    padding: 1rem;
+  }
+    .wrapper-body {
+    min-height: 100vh;
+  }
+
+  .page-content {
+    padding: 2rem;
+  }
+
+ 
+</style>
+</head>
+<div class="main-cover">
+  {%- include head.html -%}
+
+  <body>
+<!-- {{page.url}} -->
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper-body">
+        <!-- <ul class="top-menu">
+          <li class="menu-item"><a class="active" href="about.html">Home</a></li>
+          </ul> -->
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+</div>
+</html>

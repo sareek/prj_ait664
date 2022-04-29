@@ -1,0 +1,55 @@
+body {
+font-size: 1rem;
+font-weight: normal;
+color: #111111;
+text-align: left;
+background-color: #FFFFFF;
+
+}
+
+.top-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3d71a1;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+  }
+  
+  .menu-item  {
+    float: left;
+  }
+  
+  .menu-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .menu-item a:hover {
+    background-color: #95a9c9;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    transition: 0.2s;
+  }
+
+  .main-header {
+    text-align: center;
+  }
+
+  .site-title {
+    font-size: 1.728rem;
+  }
+
+  .site-title a {
+    text-decoration: none;
+  }
+  

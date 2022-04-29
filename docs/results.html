@@ -1,0 +1,95 @@
+---
+layout: default
+---
+
+<link href="{{ "/assets/result.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" rel="stylesheet">
+
+<div class="result-wrap">
+    <h1>Result</h1>
+    <!-- <p>
+        Average AQI is determined by averaging the AQI values from 2015-2019 for each county. Below table gives more information about mean AQI values for low and high income counties. 
+    </p>
+    <p>
+        From the table we can say that both low-income and medium/high-income counties have almost the same mean AQI. It is surprising to see that mean for the number of days with moderate AQI and mean for the number of days with unhealthy AQI is less than medium/high income counties. 
+
+    </p>
+    <div class="img-holder1">
+        <figure>
+          <figcaption> Mean AQI for low-income and high-income counties</figcaption>
+          <img src="{{ site.baseurl }}/assets/images/img_r1.png" alt="man walking at a street"/>
+        </figure>
+      </div>
+      <p>
+        From the table we can say that both low-income and medium/high-income counties have almost the same mean AQI. It is surprising to see that mean for the number of days with moderate AQI and mean for the number of days with unhealthy AQI is less than medium/high income counties. 
+      </p>
+      <h2>AQI and median household income</h2>
+    <p>
+        We use an ordinary least regression model to identify the relationship between AQI and median income for 1,832 counties in the United States. Below is the summary of the results from the regression model for AQI and median Income.
+    </p>
+    
+    <div class="img-holder1">
+        <figure>
+          <figcaption> Mean AQI for low-income and high-income counties</figcaption>
+          <img src="{{ site.baseurl }}/assets/images/q1.png" alt="man walking at a street"/>
+        </figure>
+      </div>
+     <p>From the above results,  a p-value of 0.000 means we can reject the null hypothesis and conclude that there is a significant relationship between the income of a county and the median AQI level of that county. However, the R-squared value of 0.016 says that there is no strong linear correlation between AQI and median household income. We can observe that the coefficient for median income is very low (in the order of e-5). This indicates that for every one unit increase in AQI, there is 7.814e-05 units increase in median income.  From the below plot of actual vs fitted AQI, we can see there is a slightly downward trend in AQI as the income increases.</p>
+    
+     <div class="img-holder1">
+      <figure>
+        <figcaption> Actual Vs predicted AQI for different income levels</figcaption>
+        <img src="{{ site.baseurl }}/assets/images/img_r3.png" alt="pred val"/>
+      </figure>
+    </div>
+
+    <div class="img-holder1">
+        <figure>
+          <figcaption> Number of days with good AQI and median household income</figcaption>
+          <img src="{{ site.baseurl }}/assets/images/q2.png" alt="aqi and median h income"/>
+        </figure>
+      </div>
+      <p>
+        From the above results,  a p-value of 0.241 means we cannot reject the null hypothesis and conclude that there is no significant relationship between the income of a county and the median AQI level of that county. The R-squared value of 0.001 says that there is almost zero correlation between the number of days with good AQI and median household income. We can observe that the coefficient for median income is very low (in the order of e-5). This indicates that for every one unit increase in the number of days with good AQI, there is 8.77e-05 units increase in median income. 
+      </p>
+
+     <div class="img-holder1">
+        <figure>
+          <figcaption> Number of days with moderate AQI and median household income</figcaption>
+          <img src="{{ site.baseurl }}/assets/images/q3.png" alt="aqi and median h income"/>
+        </figure>
+      </div>
+     <p>From the above results,  a p-value of 0.00 means we can reject the null hypothesis and conclude that there is a significant relationship between the income of a county and the number of days with moderate AQI level of that county. The R-squared value of 0.013 says that there is very low correlation between the number of days with moderate  AQI and median household income. We can observe that the coefficient for median income is very low (in the order of e-5). This indicates that for every one unit increase in the number of days with moderate AQI, there is 5.24e-05 units increase in median income. </p>
+
+     <div class="img-holder1">
+        <figure>
+          <figcaption> Number of days with unhealthy AQI and median household income</figcaption>
+          <img src="{{ site.baseurl }}/assets/images/q4.png" alt="aqi and median h income4"/>
+        </figure>
+      </div>
+     <p>From the above results,  a p-value of 0.321 means we cannot reject the null hypothesis and conclude that there is no significant relationship between the income of a county and the number of days with unhealthy AQI of that county. The R-squared value of 0.001 says that there is almost zero correlation between the number of days with moderate  AQI and median household income. We can observe that the coefficient for median income is very low (in the order of e-5). This indicates that for every one unit increase in the number of days with unhealthy AQI, there is 5.64e-05 units increase in median income. </p>
+
+          <div class="img-holder1">
+            <figure>
+              <figcaption> Number of days with unhealthy for sensitive groups AQI and median household income</figcaption>
+              <img src="{{ site.baseurl }}/assets/images/q5.png" alt="aqi and median h income4"/>
+            </figure>
+          </div>
+         <p>From the above results,  a p-value of 0.002 means we can reject the null hypothesis and conclude that there is a significant relationship between the income of a county and the number of days with unhealthy AQI for sensitive groups of that county. The R-squared value of 0.005  says that there is very low correlation between the number of days with unhealthy for sensitive groups  AQI and median household income. We can observe that the coefficient for median income is very low (in the order of e-5). This indicates that for every one unit increase in the number of days with unhealthy AQI, there is 1.15e-05 units increase in median income. </p>
+
+          <div class="img-holder1">
+            <figure>
+              <figcaption> Number of days with very unhealthy AQI and median household income</figcaption>
+              <img src="{{ site.baseurl }}/assets/images/q6.png" alt="aqi and median h income4"/>
+            </figure>
+          </div>
+        <p>From the above results,  a p-value of 0.210 means we cannot reject the null hypothesis and conclude that there is no significant relationship between the income of a county and the number of days with very unhealthy AQI of that county. The R-squared value of 0.001  says that there is almost zero correlation between the number of days with unhealthy for sensitive groups  AQI and median household income. We can observe that the coefficient for median income is very low (in the order of e-7). This indicates that for every one unit increase in the number of days with unhealthy AQI, there is 5.08e-07 units increase in median income. </p>
+
+            <div class="img-holder1">
+                <figure>
+                  <figcaption> Number of days with hazardous AQI and median household income</figcaption>
+                  <img src="{{ site.baseurl }}/assets/images/q7.png" alt="aqi and median h income4"/>
+                </figure>
+              </div>
+              From the above results,  a p-value of 0.725 means we cannot reject the null hypothesis and conclude that there is no significant relationship between the income of a county and the number of days with hazardous AQI of that county. The R-squared value of 0.000  says that there is zero correlation between the number of days with hazardous  AQI and median household income. We can observe that the coefficient for median income is very low (in the order of e-7). This indicates that for every one unit increase in the number of days with unhealthy AQI, there is 5.33e-07 units increase in median income.  -->
+
+  </div>

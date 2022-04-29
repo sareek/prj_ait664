@@ -1,0 +1,38 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+  <link href="{{ "/assets/headerfile.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" rel="stylesheet">
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
+    .main-header {
+      /* font-family: 'Oregano', cursive; */
+      }
+   </style>
+  <header class='main-header'>
+    <!-- <b className="logo">Spatio Temporal Relation for forecasting Air Pollution</b> -->
+    <div class="site-branding">
+
+      <p class="site-title"><a href="{{site.baseurl}}/" rel="home">Netflix Data Analysis</a></p>
+
+    <p class="site-description">
+       <!-- Some relevant site description</p> -->
+    </div>
+    <div id="navbar" className="navbar">
+      <ul class="top-menu">
+        {% for item in site.data.menu %}
+        <li class="menu-item"><a class="active" href="{{site.baseurl}}{{item.link}}">{{item.title}}</a></li>
+        {% endfor %}
+      </ul>
+      <!-- <ul class="top-menu">
+        <li class="menu-item"><a class="active" href="{{site.baseurl}}/">Home</a></li>
+        <li class="menu-item"><a href="significance">Significance</a></li>
+        <li class="menu-item"><a href="test">Methods</a></li>
+        <li class="menu-item"><a href="{{site.baseurl}}/result">Result</a></li>
+        <li class="menu-item"><a href="{{site.baseurl}}/conclusions">Conclusions</a></li>
+      </ul> -->
+    </div>
+</header>
+</head>

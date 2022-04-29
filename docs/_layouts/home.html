@@ -1,0 +1,235 @@
+---
+layout: default
+---
+<style>
+    /* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap'); */
+    /* @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700"); */
+    .home-wrap {
+      /* font-family: 'Oregano', cursive; */
+    }
+    .img-holder1 {
+      display: flex;
+      justify-content: center;
+     
+    }
+
+ 
+    .img-holder1 figcaption {
+      margin: 1rem;
+      text-align: center;
+    }
+    .img-holder1 img {
+      padding: 2rem;
+      width: 100%;
+      height: 25rem;
+      border-radius: 20px;
+      border: 2px solid #d99d68;
+      
+    }
+
+    .img-holder1 img:hover {
+      transition: transform .2s; 
+      transform: scale(1.05);
+    }
+
+    .img-holder2 {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .img-home-pad {
+      padding: 20px;
+    }
+
+    .img-holder2 img {
+      /* padding: 2rem; */
+      width: 100%;
+      height: 25rem;
+      border-radius: 20px;
+    }
+
+    .img-holder2 img:hover {
+      transition: transform .2s; 
+      transform: scale(1.05);
+    }
+
+  ol {
+  max-width: 350px;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 40px;
+}
+ol li {
+  margin: 0 0 0.5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  color: #3d71a1;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 20px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  transform: rotate(-10deg);
+  background: rgb(145, 150, 160);
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 0 #999;
+}
+
+
+</style>
+
+
+<div class="home-wrap">  
+  <h2 class="title">Brief Overview</h2>  
+  <p>
+    The goal of this project is to identify the
+     relationship between average income of a country and netflix standard subscription cost as well as number
+     of netflix subscribers for that country.  
+  </p>
+
+  <p>
+   Furthermore, we are aiming to find which countries are similar to each other in terms of library size, 
+   tv shows, movie shows,   netflix subscribers count, 
+   and subscription fee, while also taking into account country’s gdp, income and population
+
+  </p>
+  <!-- <p>
+    Air Pollution is one of the major challenges faced by urban cities and towns caused mainly due to industrial and vehicular emissions, 
+    uncontrolled burning of fossil fuels, and excessive use of Heating Ventilating Air Conditioning (HVAC)
+    systems.
+  
+  It has direct efect on human, animal and plants health.
+  Studies have found pollution kills most infants in poorer and developing countries.
+   WHO has said that every year, exposure to air pollution is estimated to cause seven million
+    premature deaths. Mostly, people who belong to the vulnerable group with respiratory illness 
+    like asthma, or infants or people with lower immunity are at more risk of death due to air pollution.
+  </p> 
+  <p>
+    Economic factors such as income and poverty level
+    are related to exposure of people with polluted air. 
+     Hence, people with lower economic status are more likely to become the victim of air pollution.
+  </p>   -->
+ 
+<div class="img-holder1">
+  <figure>
+    <figcaption>Image shows variation in Netflix standard cost across different countries.</figcaption>
+    <img src="{{ site.baseurl }}/assets/images/nimg1.png" alt="man walking at a street"/>
+  </figure>
+</div>
+
+
+
+
+
+<h2>Netflix Intro</h2>
+Some useful info Some useful infoSome useful infoSome useful infoSome useful infoSome useful info
+Some useful infoSome useful infoSome useful infoSome useful infoSome useful info
+Some useful infoSome useful infoSome useful info
+<p>Some useful infoSome useful infoSome useful infoSome useful infoSome useful infoSome useful infoSome useful info
+  Some useful infoSome useful infoSome useful infoSome useful infoSome useful infoSome useful info
+</p>
+<p>
+  Some useful infoSome useful infoSome useful infoSome useful infoSome useful infoSome useful info
+</p>
+<div class="img-holder2">
+  <div class="img-home-pad">
+    <img src="{{ site.baseurl }}/assets/images/nimg2.png" alt="AQI"/>
+  </div>
+  <div class="img-home-pad">
+    <img src="{{ site.baseurl }}/assets/images/nimg3.png" alt="air pollutants"/>
+  </div>
+</div>
+<h2>
+  Some heading
+</h2>
+
+
+<p>
+  Some useful content Some useful contentSome useful contentSome useful contentSome useful contentSome useful content
+</p>
+<ol>
+<li>Some useful content</li>
+<li>Some useful content</li>
+<li>Some useful content</li>
+<li>Some useful content</li>
+<li>Some useful content</li>
+</ol>
+
+<!-- <h1>Why is the study important?</h1>
+  <p>
+    Consumption of polluted air leads to harmful effects on the health of people.
+     While there is no doubt about that, it is also important to plan for a better economy,
+      education and other socio economic factors. Now the question is while aiming to speed up 
+      economic growth should we be cautious about the effects of these activities on the environment.
+       It is known that industrial processes emit huge amounts of organic compounds carbon monoxide, 
+       hydrocarbons, and chemicals into the air. These pollutants are reasons for global warming and
+        greenhouse effect in the air. Burning gas, coal and oil results in three times as many deaths as 
+        road traffic accidents worldwide and it is estimated that air pollution has a $2.9 trillion 
+        economic cost, equating to 3.3 percent of the world’s GDP. 
+  </p>
+
+   <p>
+    So various socio-economic factors contribute to the increase in air pollution and also
+     we can find some patterns in levels of air pollution based on socio economic factors.
+   </p>
+   <p> This study of understanding relationship between
+    socio-economic factors and exposure to air pollution is important because
+    it helps in more in-detail understanding of how socio economic factors are related 
+    with air pollution that can help autorities to come up with an appropriate plan for 
+    sustainable developmental activities.
+   </p>
+   <p>
+     Air pollution affects people and society in numerous ways.
+     People with lower socio-economic status are at even riskier side of getting severely hurt 
+     because they are less aware about negative effects of air pollution and
+     have limited resources for proper health care. 
+    
+    
+   </p>  -->
+
+ 
+   <!-- <p>
+    Some well known impacts of air pollution includes, 
+   </p>
+   <ol>
+    <li><b>Impacts of residents</b></li>
+    <p>
+     Tiny particles in atmosphere can easily penetrate through human respiratory system and cause damage to cardiovascular system.
+     It has both short as well as long-term impacts on human health.</p>
+    <li><b>Impacts on local farmers</b></li>
+      <p>
+        It reduces crop yields and life of plants.
+      </p>
+    <li><b>Impacts on global climate</b></li>
+     <p>
+        Green house gases present in the atmosphere is strongly linked to sea level rise and global warming.
+     </p>
+    <li><b>Impacts on aviation agencies</b></li>
+     <p>
+        Reduced visibility causes flight cancellations, diversions, and delays in reaching destinations.
+     </p>
+    <li><b>Impacts on economy</b></li>
+    <p>
+        Costs related to human health increase and productivity decreases due to poor health of people.
+
+    </p>
+    </ol> -->
+
+
+  <!-- <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}"> {{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul> -->
+
+</div>  

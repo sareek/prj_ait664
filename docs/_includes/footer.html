@@ -1,0 +1,196 @@
+
+<!-- <link href="{{ "/assets/footerfile.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" rel="stylesheet"> -->
+<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
+
+  footer { 
+  box-sizing: border-box;
+  position: relative; 
+  margin: 5px 0px 0px 0px;
+  background-color:#3d71a1;
+  color: #ffffff;
+  font-style: normal;
+  padding:4px 0 10px;
+  line-height:24px;
+  font-family: 'Tajawal', sans-serif;
+  word-break: normal;
+  border-radius: 10px;
+  box-shadow: 2px 6px 60px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.row-footer {
+  padding: 3px 20px 3px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row-footer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+hr {
+  width: 50%;
+  border: none;
+  border-top: 0.1rem ridge rgba(100, 150, 173, 0.596);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+
+.site-logo {
+  float: left;
+  width: 15%;
+  padding: 10px;
+}
+
+.site-logo span {
+  font-family: 'Oregano', cursive;
+  font-size: 20px;
+}
+
+
+.footer-nav li {
+  list-style: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+
+.right-dis {
+  float: right;
+}
+
+.left-dis {
+  float: left;
+}
+
+@media (max-width:900px)
+{
+  .subscribe-form {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .subscribe-form > p {
+    margin-left: -5px;
+  }
+
+  .site-logo {
+    float: left;
+    width: 28%;
+    padding: 10px;
+  }
+
+  .footer-nav {
+    top: 30%;
+    left: 12%;
+  }
+
+  .site-links {
+    float: left;
+    width: 20%;
+    padding: 10px;
+  }
+
+  .adr-email{
+    width: 35%;
+  }
+
+  .adr-email .email {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:600px) {
+  .right-dis {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-dis {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
+<footer>
+
+  <div class="row-footer">
+    <div class="site-logo">
+      <strong>Logo</strong>
+      <ul class="footer-nav">
+        <li class="item1">
+          <span></span>
+        </li>
+      </ul>
+    </div>
+   
+   
+    <div class="subscribe-form">
+         <b>&nbsp;&nbsp;&nbsp;&nbsp;Reach out to us through following links
+         <br />
+       
+         <a style="text-decoration: none !important;" target="__blank" href="https://www.linkedin.com/in/sarik-dhungel-108380133/"> 
+          <i style="color: #4c4099; font-size: 2.1rem; margin: 10px;" class="fa fa-linkedin-square"></i>
+         </a>
+         
+         &nbsp;
+         <a target="__blank" href="https://github.com/sareek"> 
+         <i style="color: #4c4099; font-size: 2.1rem; margin: 10px;text-decoration: none !important;" class="fa fa-github"></i>
+         </a>
+
+      </b>
+    </div>
+  </div>
+
+  <hr>
+
+
+  <div class="row-footer">
+    <div class="right-dis">Project for AIT 664 by, &nbsp;&nbsp;<strong>AQSY</strong></div>
+    <div class="left-dis">Copyright © 2022. All the rights are reserved.</div>
+  </div>
+
+</footer>
+
+
+
+
+<!-- <footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+     Footer
+     
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+            </li>            
+                        
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+     
+      </div>
+    </div>
+
+  </div>
+
+</footer> -->

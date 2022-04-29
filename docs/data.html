@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<link href="{{ "/assets/data.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" rel="stylesheet">
+
+
+<div class="data-wrap">
+<h1>Data</h1>
+
+<!-- We used median household income and air quality data from various counties across the United States.
+ Air quality for each county is extracted from the Environmental Protection Agency (EPA) website. 
+Median household income is extracted from the US Census website. Below is the summary of the datasets:
+
+  <ol>
+    <li>
+      Median household income by county
+    </li>
+    <p>
+      Median household income collected from Census website is the 5-year mean estimates during 2015-2019. 
+      Census provides household income for different categories like race, family size, marital status etc.
+       We need only total median household income and margin of error to proceed with our analysis. 
+    </p>
+    <li>
+      Annual AQI summary by county:
+    </li>
+    <p>
+      AQI data from 2015-2019 is collected to match with Census data. 
+      AQI values for each county is determined by taking average of the AQI values for that county 
+      during 2015-2019. 
+    </p>   
+  </ol>
+
+  <h2>Data Preprocessing</h2>
+  <p>
+    Around 43% of counties has no AQI data. Therefore, we excluded the median household income for these counties to match both datasets. This leaves us with 1,842 counties. 
+  </p>
+
+  <p>
+    Below is the snapshot of both datasets. First one shows median AQI and number of days with different AQI levels and second dataset shows median household income and margin of error for each county in the United States. Last column in second dataset tells us whether the median household income for a county fall under low-income or non-low (medium/high) income. As per US department of Housing and Urban development, low income neighborhoods are neighborhoods with median household income less than 80 percentage of the US median household income ($65712 for the year 2019).
+  </p>
+
+  <div class="img-holder1">
+    <div class="img-inside">
+    <figure>
+      <figcaption> Median AQI and number of days with different AQI levels</figcaption>
+      <img src="{{ site.baseurl }}/assets/images/img6.png" alt="median aqi"/>
+    </figure>
+  </div>
+  </div>
+
+  <div class="img-holder1">
+    <figure>
+      <figcaption> second dataset shows median household income and margin of error for each county in the United States</figcaption>
+      <img src="{{ site.baseurl }}/assets/images/img7.png" alt="median income and error"/>
+    </figure>
+  </div>
+
+   <p>Some references and data source links includes:</p>
+     <ol>
+       <li><a target="_blank" href="https://www.epa.gov/outdoor-air-quality-data">EPA Air Quality Data</a></li>
+      <li><a target="_blank" href="https://data.census.gov/cedsci/">Cencus Data for Income</a>
+      </li>
+      <li><a target="_blank" href="https://www.huduser.gov/portal/datasets/il/fmr98/sect8.html">Office of Policy Development and Research</a>
+    </li>
+     </ol> -->
+   
+</div>

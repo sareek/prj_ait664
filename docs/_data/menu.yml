@@ -1,0 +1,19 @@
+- title: Home
+  link: /
+
+- title: Data
+  link: /data
+
+- title: Visualization
+  link: /visualization
+
+# - title: Methods
+#   link: /methods
+
+- title: Result And Discussion
+  link: /results
+  
+- title: Summary
+  link: /summary  
+
+   
