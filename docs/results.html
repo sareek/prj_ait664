@@ -4,13 +4,119 @@ layout: default
 
 <link href="{{ "/assets/result.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" rel="stylesheet">
 
-<div class="result-wrap">
+<div style="font-size: 1.2rem;" class="result-wrap">
     <h1>Result</h1>
     <p>
-      We use an ordinary least regression model to identify the relationship between
+      The box plot shows separability of standard netflix subscription price between three clusters
+       of countries (c1, c2 and c3). Mean value for c2 is pretty different than c1 and there is some difference 
+       with c3 as well.      
+    </p>
+    <div class="img-holder1">
+      <figure>
+        <figcaption> Box plot showing separability of three clusters with standard Netflix price</figcaption>
+        <img style="height: 35rem;" src="{{ site.baseurl }}/assets/images/boxplot.png" alt="boxplot"/>
+      </figure>
+    </div>
+
+    <div class="img-holder1">
+      <figure>
+        <figcaption> Analysis of Variance (ANOVA) test result</figcaption>
+        <img src="{{ site.baseurl }}/assets/images/anovapng.png" alt="anova"/>
+      </figure>
+    </div>
+    <p>
+      Anova test was also performed to find out if there is significant difference in standard price 
+      for different clusters of countries. We got p value of 1.281e-07 which is super low showing there is a 
+      significant difference in values of standard netflix cost for different clusters of countries.
+    </p>
+    <div class="img-holder1">
+      <figure>
+        <figcaption> Standard Netflix price VS Three Clusters of Countries</figcaption>
+        <img style="height: 30rem;" src="{{ site.baseurl }}/assets/images/img_cluster_bar.png" alt="clusters_bar"/>
+      </figure>
+    </div>
+
+    <br />
+    <hr>
+    <br />
+    <p>
+      We used regression model to identify the relationship between
       income of a country and Netflix standard cost and number of subscribers for different countries across the world.
      Below is the summary of the results from the regression model for income and standard cost.
    </p>
+   <div class="img-holder1">
+    <figure>
+      <figcaption> Relationship of Income with Standard subscription price</figcaption>
+      <img src="{{ site.baseurl }}/assets/images/income_standardcost_controlled.png" alt="regression1"/>
+    </figure>
+  </div>
+  <p>
+    In the figure above we can see we got a p value of  1.579e -7.
+    We got this result while controlling for the country's gdp, population, population density and inflation.
+    The lower p value shows that average income of a country affects netflix standard subscription price 
+    in a significant way. 
+
+    However, the R squared value of 0.5 shows there is not strong correlation between Income and standard
+    Netflix subscription price. 
+    <!-- Also, we can observe that the coefficient for Income is in order of e-4 whic is  very low. This 
+    indicates that for every one unit increase in susbscription  -->
+  </p>
+
+  <div class="img-holder1">
+    <figure>
+      <figcaption> Relationship of Income with Netflix Subscribers</figcaption>
+      <img src="{{ site.baseurl }}/assets/images/income_subscribers_controlled.png" alt="regression2"/>
+    </figure>
+  </div>
+  <p>
+    In the figure above we can see we got a p value of 0.2291
+    We got this result while controlling for the country's gdp, population, population density and inflation.
+    The p value shows that average income of a country doesn't affect netflix subscribers
+    in a significant way. 
+
+    Also, the R squared value of 0.03855 shows there is not much correlation between Income and 
+    Netflix subscribers. 
+  </p>
+
+  <div class="img-holder1">
+    <figure>
+      <figcaption> Binary Tree that distinguishes between the standard netflix subscription price as very low, low, high and very high</figcaption>
+      <img src="{{ site.baseurl }}/assets/images/standard_cost_category_tree.png" alt="tree"/>
+    </figure>
+  </div>
+  <p>
+    From the figure we can see that a tree of depth 7 can perfectly classify four categories of standard
+    Netflix subscription price (Very Low, Low, High and Vey High). Furthermore, <b>"Income"</b> variable in the root level
+    shows it has highest gain. We can get various useful insights from this diagram like, 
+    if income is greater than 23100 and population is greater that 7147553, then that country belongs to <b>"High"</b>
+    standard subscription price category.
+  </p>
+
+  <div class="img-holder1">
+    <figure>
+      <figcaption> Binary Tree that distinguishes between the developed and developing countries</figcaption>
+      <img src="{{ site.baseurl }}/assets/images/tree_devv_deee.png" alt="tree"/>
+    </figure>
+  </div>
+  <p>
+    From the figure we can see that a tree of depth 7 can perfectly classify countries as developing or developed.
+    Furthermore, <b>"Inflation"</b> variable in the root level
+    shows it has highest gain. We can get various useful insights from this diagram like, 
+    if inflation is greater than 3.730 and premium cost is less than 19.54, then that country belongs to <b>"Developed"</b>
+    category.
+  </p>
+
+  <div class="img-holder1">
+    <div  class="img-home-pad">
+      <img style="width: 90%; border:none;" src="{{ site.baseurl }}/assets/images/movies_d.png" alt="AQI"/>
+    </div>
+    <div  class="img-home-pad">
+      <img style="width: 90%; border:none;" src="{{ site.baseurl }}/assets/images/tvshows_d.png" alt="air pollutants"/>
+    </div>
+    <div  class="img-home-pad">
+      <img style="width: 90%; border:none;" src="{{ site.baseurl }}/assets/images/librarysize_d.png" alt="air pollutants"/>
+    </div>
+  </div>
     <!-- <p>
         Average AQI is determined by averaging the AQI values from 2015-2019 for each county. Below table gives more information about mean AQI values for low and high income counties. 
     </p>

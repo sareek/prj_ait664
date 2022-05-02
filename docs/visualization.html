@@ -3,7 +3,7 @@ layout: default
 ---
 <link href="{{ "/assets/visualization.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" rel="stylesheet">
 
-<div class="visualization-wrap">
+<div style="font-size: 1.2rem;" class="visualization-wrap">
   <h1>Visualization</h1>
   <p>We used QGIS for the world map visualization and used the data we collected along with it 
     for doing Exploratory data analysis. QGIS is an open-source cross-platform desktop geographic 
@@ -105,6 +105,19 @@ layout: default
   </div>
   <p> From the above figure, we can observe that as income increases, standard cost for Netflix also increases.
 
+    <div class="img-holder1">
+      <figure>
+        <figcaption> Bubble Chart representing Income and Standard Netflix price</figcaption>
+        <img src="{{ site.baseurl }}/assets/images/bubble_cost_income.png" alt="income vs standard_cost"/>
+      </figure>
+    </div>
+
+    <div class="img-holder1">
+      <figure>
+        <figcaption> Bubble Chart representing Library Size and Population</figcaption>
+        <img src="{{ site.baseurl }}/assets/images/bubbllee.png" alt="income vs standard_cost"/>
+      </figure>
+    </div>
   <!-- <h1>Data visualization</h1>
   <p>We use the United States county shape file for visualization and exploratory data analysis. Shape file can be downloaded from
     <a target="_blank" href="https://www2.census.gov/geo/tiger/TIGER2020/COUNTY/">here:</a></p>
