@@ -6,10 +6,23 @@ layout: default
 
 <div class="data-wrap">
 <h1>Data</h1>
+<!-- <div>
+  <p>
+    Netflix price: https://www.comparitech.com/ + Kaggle
+Netflix subscribers: https://www.comparitech.com/tv-streaming/netflix-subscribers/
+Population: https://www.kaggle.com/datasets/tanuprabhu/population-by-country-2020
+Life Expectancy: https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who
+GDP: https://www.kaggle.com/datasets/tanuprabhu/population-by-country-2020 + Google Search search
+  </p>
+</div> -->
 
-<!-- We used median household income and air quality data from various counties across the United States.
- Air quality for each county is extracted from the Environmental Protection Agency (EPA) website. 
-Median household income is extracted from the US Census website. Below is the summary of the datasets:
+We collected netflix data containing information about basic subscription price, standard subscription price,
+premium subscription price, library size from kaggle and a comparitech's website. 
+
+We also used average income, population, life expectancy and GDP information from countries across the worldwide
+while doing data analysis.
+
+<!-- Below is the summary of the datasets:
 
   <ol>
     <li>
@@ -28,40 +41,43 @@ Median household income is extracted from the US Census website. Below is the su
       AQI values for each county is determined by taking average of the AQI values for that county 
       during 2015-2019. 
     </p>   
-  </ol>
+  </ol> -->
 
-  <h2>Data Preprocessing</h2>
-  <p>
+  <!-- <h2>Data Preprocessing</h2> -->
+  <!-- <p>
     Around 43% of counties has no AQI data. Therefore, we excluded the median household income for these counties to match both datasets. This leaves us with 1,842 counties. 
-  </p>
+  </p> -->
 
   <p>
-    Below is the snapshot of both datasets. First one shows median AQI and number of days with different AQI levels and second dataset shows median household income and margin of error for each county in the United States. Last column in second dataset tells us whether the median household income for a county fall under low-income or non-low (medium/high) income. As per US department of Housing and Urban development, low income neighborhoods are neighborhoods with median household income less than 80 percentage of the US median household income ($65712 for the year 2019).
+    Below is the snapshot of datasets. 
+    <!-- First one shows median AQI and number of days with different AQI levels and second dataset shows median household income and margin of error for each county in the United States. Last column in second dataset tells us whether the median household income for a county fall under low-income or non-low (medium/high) income. As per US department of Housing and Urban development, low income neighborhoods are neighborhoods with median household income less than 80 percentage of the US median household income ($65712 for the year 2019). -->
   </p>
 
   <div class="img-holder1">
     <div class="img-inside">
     <figure>
-      <figcaption> Median AQI and number of days with different AQI levels</figcaption>
-      <img src="{{ site.baseurl }}/assets/images/img6.png" alt="median aqi"/>
+      <figcaption> Demographic, economic and Netflix statistics of countries across the world</figcaption>
+      <img src="{{ site.baseurl }}/assets/images/snapp1.png" alt="median aqi"/>
     </figure>
   </div>
   </div>
 
   <div class="img-holder1">
     <figure>
-      <figcaption> second dataset shows median household income and margin of error for each county in the United States</figcaption>
-      <img src="{{ site.baseurl }}/assets/images/img7.png" alt="median income and error"/>
+      <figcaption>Number of TV and Movie shows, total library size and different subscription price for Netflix across the world</figcaption>
+      <img src="{{ site.baseurl }}/assets/images/snap2.png" alt="median income and error"/>
     </figure>
   </div>
 
    <p>Some references and data source links includes:</p>
      <ol>
-       <li><a target="_blank" href="https://www.epa.gov/outdoor-air-quality-data">EPA Air Quality Data</a></li>
-      <li><a target="_blank" href="https://data.census.gov/cedsci/">Cencus Data for Income</a>
+       <li><a target="_blank" href="https://www.kaggle.com/datasets/prasertk/netflix-subscription-price-in-different-countries">Netflix Subscription price</a></li>
+      <li><a target="_blank" href="https://docs.google.com/spreadsheets/d/1GPsUoxM_A0BiGuAAYE5gvE28VOJItCbbf1XyyQbpWCY/edit?usp=sharing">Open data source by Comparitech</a>
       </li>
-      <li><a target="_blank" href="https://www.huduser.gov/portal/datasets/il/fmr98/sect8.html">Office of Policy Development and Research</a>
+      <li><a target="_blank" href="https://www.kaggle.com/datasets/tanuprabhu/population-by-country-2020">Population of different countries in the World</a>
+        <li><a target="_blank" href="https://www.kaggle.com/datasets/frankmollard/income-by-country">Estimated Income per capita of different countries in the World</a>
+          <li><a target="_blank" href="https://www.kaggle.com/datasets/tanuprabhu/population-by-country-2020">GDP per capita of different countries in the World</a>
     </li>
-     </ol> -->
+     </ol>
    
 </div>

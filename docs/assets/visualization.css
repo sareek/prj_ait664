@@ -17,7 +17,7 @@
       }
       ol li::before {
         content: counter(my-awesome-counter);
-        color: #3d71a1;
+        color: black;
         font-size: 1rem;
         font-weight: bold;
         position: absolute;
@@ -38,7 +38,10 @@
       .img-holder1 {
         display: flex;
         justify-content: center;
-       
+      }
+
+      .img-home-pad {
+        padding: 3rem;
       }
   
    
