@@ -54,7 +54,7 @@ layout: default
     }
 
   ol {
-  max-width: 350px;
+  max-width: 50rem;
   counter-reset: my-awesome-counter;
   list-style: none;
   padding-left: 40px;
@@ -92,15 +92,25 @@ ol li::before {
   <p>
     The goal of this project is to identify the
      relationship between average income of a country and netflix standard subscription cost as well as number
-     of netflix subscribers for that country.  
+     of netflix subscribers for that country while controlling for variables like GDP, inflation and population.
+     Furthermore, we want to divide countries similar to each other in terms of library size, TV shows, 
+     movie shows, subscribers while also considering country's average income per capita, population and GDP per capita
+     to look out for interesting patterns among these clusters like how standard subscription
+     price of Netflix varies among these clusters.
   </p>
-
   <p>
-   Furthermore, we are aiming to find which countries are similar to each other in terms of library size, 
-   tv shows, movie shows,   netflix subscribers count, 
-   and subscription fee, while also taking into account country’s gdp, income and population
-
+    Moreover, we also want to see variations in library size,
+    movie shows, tv shows for developing VS developed countries. And, build a binary decision tree 
+    classifier that  
+    <ol>
+      <li> distinguishes between the standard netflix subscription price as "very low", 
+        "low", "high" and "vey high" and,</li>
+        <li>distinguishes between the developed and developing countries</li>
+    </ol>
+   
   </p>
+
+
   <!-- <p>
     Air Pollution is one of the major challenges faced by urban cities and towns caused mainly due to industrial and vehicular emissions, 
     uncontrolled burning of fossil fuels, and excessive use of Heating Ventilating Air Conditioning (HVAC)
@@ -129,16 +139,18 @@ ol li::before {
 
 
 
-<h2>Netflix Intro</h2>
-Some useful info Some useful infoSome useful infoSome useful infoSome useful infoSome useful info
-Some useful infoSome useful infoSome useful infoSome useful infoSome useful info
-Some useful infoSome useful infoSome useful info
-<p>Some useful infoSome useful infoSome useful infoSome useful infoSome useful infoSome useful infoSome useful info
-  Some useful infoSome useful infoSome useful infoSome useful infoSome useful infoSome useful info
-</p>
-<p>
-  Some useful infoSome useful infoSome useful infoSome useful infoSome useful infoSome useful info
-</p>
+<h2>Synopsis of findings</h2>
+<ol>
+  <li>Standard subscription price varies significantly among 3 clusters of countries that was discovered</li>
+<li>
+  Income of a country affects netflix subscription price in a significant manner. 
+</li>
+<li>
+  Income of a country doesn’t affects netflix subscribers in a significant manner. 
+</li>
+<li>Developed countries have bigger librazy size, number of tv and movie shows in total.</li>
+<li>There is no useful pattern in size of population and library size for a country.</li>
+</ol>
 <div class="img-holder2">
   <div class="img-home-pad">
     <img src="{{ site.baseurl }}/assets/images/nimg2.png" alt="AQI"/>
@@ -148,19 +160,15 @@ Some useful infoSome useful infoSome useful info
   </div>
 </div>
 <h2>
-  Some heading
+  Synopsis of most important lessons from the effort
 </h2>
 
-
-<p>
-  Some useful content Some useful contentSome useful contentSome useful contentSome useful contentSome useful content
-</p>
 <ol>
-<li>Some useful content</li>
-<li>Some useful content</li>
-<li>Some useful content</li>
-<li>Some useful content</li>
-<li>Some useful content</li>
+<li>It is favorable at times to start with simple questions first to build the momentum.</li>
+<li>Start with some descriptive tasks (human-interpretable patterns that describe the data) 
+  if you are finding it tough to start with prediction tasks.</li>
+<li>It’s better to build several versions of model by iterating multiple 
+  times than to spend an enormous amount of time on building one model.</li>
 </ol>
 
 <!-- <h1>Why is the study important?</h1>
